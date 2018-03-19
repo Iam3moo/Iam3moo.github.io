@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Meta, title, CSS, favicons, etc. -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Gentelella Alela! | </title>
+
+  <!-- Bootstrap -->
+  <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <!-- NProgress -->
+  <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+
+  <!-- Custom Theme Style -->
+  <link href="../build/css/custom.min.css" rel="stylesheet">
+</head>
+
+<body class="nav-md">
+  <div class="container body">
+    <div class="main_container">
+      <div class="col-md-3 left_col">
+        <div class="left_col scroll-view">
+          <div class="navbar nav_title" style="border: 0;">
+            <a href="index.html" class="site_title"><span>พรรค....</span></a>
+          </div>
+
+          <div class="clearfix"></div>
+
+          <!-- sidebar menu -->
+          <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+            <div class="menu_section">
+              <ul class="nav side-menu">
+                <li><a href="index.html"><i class="fa fa-home"></i> Home </a>
+                </li>
+                <li><a href="./form_wizards.html"><i class="fa fa-home"></i> ลงทะเบียนผู้สมัคแบบเต็ม </a>
+                </li>
+                <li><a href="tables.html"><i class="fa fa-home"></i> ตรวจสอบรายละเอียดสมาชิก </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- /sidebar menu -->
+
+          <!-- /menu footer buttons -->
+          <div class="sidebar-footer hidden-small">
+            <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+          </div>
+          <!-- /menu footer buttons -->
+        </div>
+      </div>
+
+     <!-- top navigation -->
+     <div class="top_nav">
+        <div class="nav_menu">
+          <nav>
+            <div class="nav toggle">
+              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+            </div>
+            <h1> ระบบ LOGIN เจ้าหน้าที่ผู้ใช้งาน</h1>
+            <ul class="nav navbar-nav navbar-right">
+              <li style="margin:0 10">
+
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <!-- /top navigation -->
+
+      <!-- page content -->
+      <div class="right_col" role="main">
+        <div class="">
+
+          <div class="clearfix"></div>
+
+          <div class="row">
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="x_panel">
+                <div class="x_title">
+                  <h2>ลงทะเบียนสมาชิกแบบเต็ม</h2>
+
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+
+
+                  <!-- Smart Wizard -->
+                  <div id="wizard" class="form_wizard wizard_horizontal">
+                    <ul class="wizard_steps">
+                      <li>
+                        <a href="#step-1">
+                            <span class="step_no">1</span>
+                            <span class="step_descr">
+                                              Step 1<br />
+                                              <small>Step 1 อ่านบัตรจากเครื่องอ่านบัตร</small>
+                                          </span>
+                          </a>
+                      </li>
+                      <li>
+                        <a href="#step-2">
+                            <span class="step_no">2</span>
+                            <span class="step_descr">
+                                              Step 2<br />
+                                              <small>Step 2 description</small>
+                                          </span>
+                          </a>
+                      </li>
+                      <li>
+                        <a href="#step-3">
+                            <span class="step_no">3</span>
+                            <span class="step_descr">
+                                              Step 3<br />
+                                              <small>Step 3 description</small>
+                                          </span>
+                          </a>
+                      </li>
+                      <li>
+                        <a href="#step-4">
+                            <span class="step_no">4</span>
+                            <span class="step_descr">
+                                              Step 4<br />
+                                              <small>Step 4 description</small>
+                                          </span>
+                          </a>
+                      </li>
+                    </ul>
+                    <div id="step-1">
+                      <h2 class="StepTitle">อ่านข้อมูลจากบัตรประชาชน</h2>
+                      <form class="form-horizontal form-label-left">
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12"><span class="required"></span>
+                                  </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <button class="btn btn-success">อ่านบัตร</button>
+
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">คำนำหน้า <span class="required"></span>
+                            </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">บัตรประจำตัวประชาชน</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">ชื่อ <span class="required"></span>
+                            </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">นามสกุล</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">วันเดือนปีเกิด/xx/xx/xxxx</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">อายุ</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">จังหวัดที่เกิด</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12">ศาสนา<span class="required"></span>
+                            </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">สัญชาติ</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">วันออกบัตร</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">วันหมดอายุ</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">ออกให้ที่ เขต/อำเภอ</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">จังหวัด</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+
+
+                      </form>
+
+                    </div>
+                    <div id="step-2">
+                      <h2 class="StepTitle">ที่อยู่ตามทะเบียนบ้าน</h2>
+                      <form class="form-horizontal form-label-left">
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">บ้านเลขที่ <span class="required"></span>
+                              </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">หมู่ที่</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">ซอย <span class="required"></span>
+                              </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">ถนน</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">แขวง/ตำบล</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">เขต/อำเภอ</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">จังหวัด</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12">รหัสไปรษณีย์<span class="required"></span>
+                              </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="birthday" class="date-picker form-control col-md-7 col-xs-12" required="required" type="text">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">โทรศัพท์บ้าน</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">โทรศัพท์มือถือ</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">โทรสาร</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">E-Mail</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                      </form>
+
+                    </div>
+                    <div id="step-3">
+                      <h2 class="StepTitle">ประวัติการศึกษา</h2>
+                      <form class="form-horizontal form-label-left">
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">การศึกษาสูงสุด <span class="required"></span>
+                              </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">คณะ/สาขา</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="last-name">ชื่อสถาบันการศึกษา <span class="required"></span>
+                              </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="last-name" name="last-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                      </form>
+                      <h2 class="StepTitle">ประวัติการทำงาน</h2>
+                      <form class="form-horizontal form-label-left">
+                        <div class="form-group">
+                          <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">อาชีพปัจจุบัน <span class="required"></span>
+                                </label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                          </div>
+                        </div>
+                        <div class="form-group">
+                          <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">ตำแหน่ง</label>
+                          <div class="col-md-6 col-sm-6 col-xs-12">
+                            <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                    <div id="step-4">
+                      
+                      <div class="row">
+                          <div class="col-md-offset-4">
+                              <h2 class="StepTitle">เลือกประเภทสมาชิก</h2>
+                        <form>
+                          <div class="radio">
+                            <label><input type="radio" name="optradio">ตลอดชีพ</label>
+                          </div>
+                          <div class="radio">
+                            <label><input type="radio" name="optradio">รายปี</label>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-offset-4">
+                          <h2 class="StepTitle">พิมพ์ใบสมัคร</h2>
+                        </div>
+                        <div class="col-md-offset-4">
+                          <button onclick="generatePdf()" class="btn btn-primary" href="index.html">พิมพ์ใบสมัคร</button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!-- End SmartWizard Content -->
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /page content -->
+
+      <!-- footer content -->
+      <footer>
+        <div class="pull-right">
+          Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+        </div>
+        <div class="clearfix"></div>
+      </footer>
+      <!-- /footer content -->
+    </div>
+  </div>
+
+  <!-- jQuery -->
+  <script src="../vendors/jquery/dist/jquery.min.js"></script>
+  <!-- Bootstrap -->
+  <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+  <!-- FastClick -->
+  <script src="../vendors/fastclick/lib/fastclick.js"></script>
+  <!-- NProgress -->
+  <script src="../vendors/nprogress/nprogress.js"></script>
+  <!-- jQuery Smart Wizard -->
+  <script src="../vendors/jQuery-Smart-Wizard/js/jquery.smartWizard.js"></script>
+  <!-- Custom Theme Scripts -->
+  <script src="../build/js/custom.js"></script>
+
+  <script src="../vendors/pdfmake/build/pdfmake.js"></script>
+  <script src="../vendors/pdfmake/build/vfs_fonts.js"></script>
+  <script src="../production/js/testPDF15.js"></script>
+
+
+</body>
+
+</html>
