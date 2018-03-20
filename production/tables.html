@@ -29,7 +29,9 @@
       <div class="col-md-3 left_col">
         <div class="left_col scroll-view">
           <div class="navbar nav_title" style="border: 0;">
-            <a href="index.html" class="site_title"><span>พรรค...</span></a>
+            <a href="index.html" class="site_title">
+              <span>พรรค...</span>
+            </a>
           </div>
 
           <div class="clearfix"></div>
@@ -39,11 +41,17 @@
           <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
             <div class="menu_section">
               <ul class="nav side-menu">
-                <li><a href="index.html"><i class="fa fa-home"></i> Home </a>
+                <li>
+                  <a href="index.html">
+                    <i class="fa fa-home"></i> Dashboard </a>
                 </li>
-                <li><a href="form_wizards.html"><i class="fa fa-home"></i> ลงทะเบียนผู้สมัคแบบเต็ม </a>
+                <li>
+                  <a href="form_wizards.html">
+                    <i class="fa fa-home"></i> ลงทะเบียนผู้สมัคแบบเต็ม </a>
                 </li>
-                <li><a href="tables.html"><i class="fa fa-home"></i> ตรวจสอบรายละเอียดสมาชิก </a>
+                <li>
+                  <a href="tables.html">
+                    <i class="fa fa-home"></i> ตรวจสอบรายละเอียดสมาชิก </a>
                 </li>
               </ul>
             </div>
@@ -52,8 +60,8 @@
           <!-- /menu footer buttons -->
           <div class="sidebar-footer hidden-small">
             <a data-toggle="tooltip" data-placement="top" title="Logout" href="login.html">
-                  <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
-                </a>
+              <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+            </a>
           </div>
           <!-- /menu footer buttons -->
         </div>
@@ -64,7 +72,9 @@
         <div class="nav_menu">
           <nav>
             <div class="nav toggle">
-              <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              <a id="menu_toggle">
+                <i class="fa fa-bars"></i>
+              </a>
             </div>
             <h1> ระบบ LOGIN เจ้าหน้าที่ผู้ใช้งาน</h1>
             <ul class="nav navbar-nav navbar-right">
@@ -94,45 +104,57 @@
                     <span class="section">กรอกข้อมูลเพื่อค้นหา</span>
 
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">ชื่อ <span class="required">*</span>
-                                                </label>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">ชื่อ
+                        <span class="required">*</span>
+                      </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
                         <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name"
                           placeholder="" required="required" type="text">
                       </div>
                     </div>
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">นามสกุล <span class="required">*</span>
-                                                </label>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">นามสกุล
+                        <span class="required">*</span>
+                      </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
                         <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
                       </div>
                     </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">จังหวัด<span class="required">*</span>
-                                                </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-3 col-sm-3 col-xs-12">จังหวัด</label>
+                      <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name" >
+                      </div>
+                      <label class="control-label col-md-1 col-sm-1 col-xs-12" for="first-name">สังกัด</label>
+                      <span class="required"></span>
+                      </label>
+                      <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12" >
                       </div>
                     </div>
                     <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">สังกัด<span class="required">*</span>
-                                                  </label>
+                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">ประเภทสมาชิก
+                        <span class="required">*</span>
+                      </label>
                       <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">ประเภทสมาชิก<span class="required">*</span>
-                                                    </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
+                        <!-- <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12"> -->
+                        <form>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optradio">ตลอดชีพ</label>
+                          </div>
+                          <div class="radio">
+                            <label>
+                              <input type="radio" name="optradio">รายปี</label>
+                          </div>
+                        </form>
                       </div>
                     </div>
                     <div class="ln_solid"></div>
                     <div class="form-group">
                       <div class="col-md-6 col-md-offset-3">
-                        <button id="send" type="submit" class="btn btn-success">ค้นหา</button>
+                        <button id="sendT" class="btn btn-success" onclick="showtable()">ค้นหา</button>
                       </div>
                     </div>
                   </form>
@@ -142,10 +164,12 @@
             <div class="clearfix"></div>
             <div class="clearfix"></div>
 
-            <div class="col-md-12 col-sm-12 col-xs-12">
+            <div class="col-md-12 col-sm-12 col-xs-12" id="table">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>ผลการค้นหา<small>รายชื่อสมาชิก</small></h2>
+                  <h2>ผลการค้นหา
+                    <small>รายชื่อสมาชิก</small>
+                  </h2>
                   <div class="clearfix"></div>
                 </div>
 
@@ -165,10 +189,14 @@
                           <th class="column-title">สังกัดเขตจังหวัด</th>
                           <th class="column-title">ประเภทสมาชิก</th>
                           <th class="column-title">สถานะสมาชิก</th>
-                          <th class="column-title "><span class="nobr"></span>
+                          <th class="column-title ">
+                            <span class="nobr"></span>
                           </th>
                           <th class="bulk-actions" colspan="7">
-                            <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions ( <span class="action-cnt"> </span> ) <i class="fa fa-chevron-down"></i></a>
+                            <a class="antoo" style="color:#fff; font-weight:500;">Bulk Actions (
+                              <span class="action-cnt"> </span> )
+                              <i class="fa fa-chevron-down"></i>
+                            </a>
                           </th>
                         </tr>
                       </thead>
@@ -180,15 +208,18 @@
                           </td>
                           <td class=" ">121000040</td>
                           <td class=" ">1111111111111</td>
-                          <td class=" ">121000210 <i class="success fa fa-long-arrow-up"></i></td>
-                          <td class=" ">John Blank L</td>
+                          <td class=" ">ทดสอบ</td>
+                          <td class=" ">ทดสอบ</td>
                           <td class="a-right a-right ">กรุงเทพ</td>
                           <td class="a-right a-right ">กรุงเทพ</td>
                           <td class="a-right a-right ">รายปี</td>
                           <td class="a-right a-right ">ปกติ</td>
                           <td class=" last">
                             <ul class="nav navbar-right panel_toolbox">
-                              <li><a href="./manageUser.html"><i class="fa fa-wrench"></i></a>
+                              <li>
+                                <a href="./manageUser.html">
+                                  <i class="fa fa-wrench"></i>
+                                </a>
                               </li>
                               <!-- <li><a><i class="fa fa-close"></i></a>
                               </li> -->
@@ -201,16 +232,20 @@
                           </td>
                           <td class=" ">121000039</td>
                           <td class=" ">1234567891234</td>
-                          <td class=" ">121000208 <i class="success fa fa-long-arrow-up"></i>
+                          <td class=" ">ทดสอบ
+                           
                           </td>
-                          <td class=" ">John Blank L</td>
+                          <td class=" ">ทดสอบ</td>
                           <td class="a-right a-right ">กรุงเทพ</td>
                           <td class="a-right a-right ">กรุงเทพ</td>
                           <td class="a-right a-right ">ตลอดชีพ</td>
                           <td class="a-right a-right ">ปกติ</td>
                           <td class=" last">
                             <ul class="nav navbar-right panel_toolbox">
-                              <li><a href="./manageUser.html"><i class="fa fa-wrench"></i></a>
+                              <li>
+                                <a href="./manageUser.html">
+                                  <i class="fa fa-wrench"></i>
+                                </a>
                               </li>
                               <!-- <li><a><i class="fa fa-close"></i></a>
                               </li> -->
@@ -224,15 +259,18 @@
                           </td>
                           <td class=" ">121000040</td>
                           <td class=" ">3333333333333</td>
-                          <td class=" ">121000210</td>
-                          <td class=" ">John Blank L</td>
+                          <td class=" ">ทดสอบ</td>
+                          <td class=" ">ทดสอบ</td>
                           <td class="a-right a-right ">กรุงเทพ</td>
                           <td class="a-right a-right ">กรุงเทพ</td>
                           <td class="a-right a-right ">ตลอดชีพ</td>
                           <td class="a-right a-right ">ปกติ</td>
                           <td class=" last">
                             <ul class="nav navbar-right panel_toolbox">
-                              <li><a href="./manageUser.html"><i class="fa fa-wrench"></i></a>
+                              <li>
+                                <a href="./manageUser.html">
+                                  <i class="fa fa-wrench"></i>
+                                </a>
                               </li>
                               <!-- <li><a><i class="fa fa-close"></i></a>
                               </li> -->
@@ -245,15 +283,18 @@
                           </td>
                           <td class=" ">121000039</td>
                           <td class=" ">2222222222222</td>
-                          <td class=" ">121000208</td>
-                          <td class=" ">John Blank L</td>
+                          <td class=" ">ทดสอบ</td>
+                          <td class=" ">ทดสอบ</td>
                           <td class="a-right a-right ">กรุงเทพ</td>
                           <td class="a-right a-right ">กรุงเทพ</td>
                           <td class="a-right a-right ">รายปี</td>
                           <td class="a-right a-right ">ปกติ</td>
                           <td class=" last">
                             <ul class="nav navbar-right panel_toolbox">
-                              <li><a href="./manageUser.html"><i class="fa fa-wrench"></i></a>
+                              <li>
+                                <a href="./manageUser.html">
+                                  <i class="fa fa-wrench"></i>
+                                </a>
                               </li>
                               <!-- <li><a><i class="fa fa-close"></i></a>
                               </li> -->
@@ -274,12 +315,12 @@
       <!-- /page content -->
 
       <!-- footer content -->
-      <!-- <footer>
+      <footer>
         <div class="pull-right">
-          Gentelella - Bootstrap Admin Template by <a href="https://colorlib.com">Colorlib</a>
+
         </div>
         <div class="clearfix"></div>
-      </footer> -->
+      </footer>
       <!-- /footer content -->
     </div>
   </div>
@@ -297,6 +338,15 @@
 
   <!-- Custom Theme Scripts -->
   <script src="../build/js/custom.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // $("#table").remove()
+    })
+    function showtable() {
+      console.log("test")
+    }
+  </script>
 </body>
 
 </html>
