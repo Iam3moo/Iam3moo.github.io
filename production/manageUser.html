@@ -96,92 +96,146 @@
             <div class="col-md-12 col-sm-12 col-xs-12">
               <div class="x_panel">
                 <div class="x_title">
-                  <h2>จัดการสมาชิก</h2>
+                  <h2>การตรวจสอบการเป็นสมาชิกพรรค</h2>
                   <div class="clearfix"></div>
                 </div>
                 <div class="x_content">
-                  <form class="form-horizontal form-label-left" novalidate>
-                    <span class="section">กรอกข้อมูลเพื่อค้นหา</span>
-
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="name">ชื่อ
-                        <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input id="name" class="form-control col-md-7 col-xs-12" data-validate-length-range="6" data-validate-words="2" name="name"
-                          placeholder="" required="required" type="text">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">นามสกุล
-                        <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="email" id="email" name="email" required="required" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">จังหวัด
-                        <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">สังกัด
-                        <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12">
-                      </div>
-                    </div>
-                    <div class="item form-group">
-                      <label class="control-label col-md-3 col-sm-3 col-xs-12" for="email">ประเภทสมาชิก
-                        <span class="required">*</span>
-                      </label>
-                      <div class="col-md-6 col-sm-6 col-xs-12">
-                        <!-- <input type="email" id="email2" name="confirm_email" data-validate-linked="email" required="required" class="form-control col-md-7 col-xs-12"> -->
-                        <form>
-                          <div class="radio">
-                            <label>
-                              <input type="radio" name="optradio">ตลอดชีพ</label>
-                          </div>
-                          <div class="radio">
-                            <label>
-                              <input type="radio" name="optradio">รายปี</label>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                    <div class="ln_solid"></div>
+                  <form class="form-horizontal form-label-left">
                     <div class="form-group">
-                      <div class="col-md-6 col-md-offset-3">
-                        <button id="sendT" class="btn btn-danger">จำหน่าย</button>
-                        <button id="sendT" class="btn btn-primary">บันทึก</button>
+                      <label class="control-label col-md-4 col-sm-4 col-xs-12">
+                        <span class="required"></span>
+                      </label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
                       </div>
                     </div>
-                  </form>
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">บัตรประจำตัวประชาชนเลขที่</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="pid" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">ชื่อ-สกุล</label>
+                      <div class="col-md-6 col-sm-6 col-xs-12">
+                        <input id="fullname" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">บ้านเลขที่</label>
+                      <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                      <label class="control-label col-md-1 col-sm-1 col-xs-12" for="first-name">ซอย</label>
+                      <span class="required"></span>
+                      </label>
+                      <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">ถนน</label>
+                      <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                      <label class="control-label col-md-1 col-sm-1 col-xs-12" for="first-name">หมู่ที่</label>
+                      <span class="required"></span>
+                      </label>
+                      <div class="col-md-1 col-sm-1 col-xs-12">
+                        <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">แขวง/ตำบล</label>
+                      <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                      <label class="control-label col-md-1 col-sm-1 col-xs-12" for="first-name">เขต/อำเภอ</label>
+                      <span class="required"></span>
+                      </label>
+                      <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">จังหวัด</label>
+                      <div class="col-md-2 col-sm-2 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                      <label class="control-label col-md-1 col-sm-1 col-xs-12" for="first-name">รหัสไปรษณีย์</label>
+                      <span class="required"></span>
+                      </label>
+                      <div class="col-md-1 col-sm-1 col-xs-12">
+                        <input type="text" id="first-name" required="required" class="form-control col-md-7 col-xs-12">
+                      </div>
+                    </div>
+
+
+
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">โทรศัพท์บ้าน</label>
+                      <div class="col-md-3 col-sm-3 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">โทรศัพท์มือถือ</label>
+                      <div class="col-md-3 col-sm-3 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">โทรสาร</label>
+                      <div class="col-md-3 col-sm-3 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label for="middle-name" class="control-label col-md-4 col-sm-4 col-xs-12">E-Mail</label>
+                      <div class="col-md-3 col-sm-3 col-xs-12">
+                        <input id="middle-name" class="form-control col-md-7 col-xs-12" type="text" name="middle-name">
+                      </div>
+                    </div>
+
+
                 </div>
+                <div class="form-group">
+
+                </div>
+
+                </form>
+
               </div>
             </div>
-            <div class="clearfix"></div>
-            <div class="clearfix"></div>
-
+            <div class="ln_solid"></div>
+            <div class="form-group">
+              <div class="col-md-6 col-md-offset-3">
+                <button id="sendT" class="btn btn-danger">จำหน่าย</button>
+                <button id="sendT" class="btn btn-primary">บันทึก</button>
+              </div>
+            </div>
+            </form>
           </div>
         </div>
       </div>
-      <!-- /page content -->
+      <div class="clearfix"></div>
+      <div class="clearfix"></div>
 
-      <!-- footer content -->
-      <footer>
-        <div class="pull-right">
-
-        </div>
-        <div class="clearfix"></div>
-      </footer>
-      <!-- /footer content -->
     </div>
+  </div>
+  </div>
+  <!-- /page content -->
+
+  <!-- footer content -->
+  <footer>
+    <div class="pull-right">
+
+    </div>
+    <div class="clearfix"></div>
+  </footer>
+  <!-- /footer content -->
+  </div>
   </div>
 
   <!-- jQuery -->
